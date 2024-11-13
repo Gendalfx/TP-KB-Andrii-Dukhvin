@@ -1,3 +1,7 @@
+# 13.11.2024
+add folder topic_04
+add solution for task1.
+
 # 18.10.2024
 add folder topic_03
 add solution for task1, task2, task3 and task4.
