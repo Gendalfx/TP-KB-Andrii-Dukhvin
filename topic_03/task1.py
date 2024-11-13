@@ -31,7 +31,7 @@ def calculator():
         # Запит на введення другого числа
         user_input = input("Введіть друге число: або 'q': ")
         if user_input.lower() == 'q':
-            print("Програма завершена.")
+            print("Програма завершена")
             break
         
         try:
@@ -43,7 +43,7 @@ def calculator():
         # Запит на вибір операції
         operation = input("Оберіть операцію (+, -, *, /): ")
         if operation.lower() == 'q':
-            print("Програма завершена.")
+            print("Програма завершена")
             break
 
         match operation:
