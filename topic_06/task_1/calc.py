@@ -20,29 +20,37 @@ def calculator():
             if operation is None:
                 return  # Завершення програми
 
+            if operation not in ('+', '-', '*', '/'):
+                error_message = f"Unknown operation: {operation}. Please try again."
+                print(error_message)
+                makeLog(num1, operation, num2, error_message)  # Логування помилки
+                continue  # Запитуємо операцію знову
+
             # Обробка операцій за допомогою match-case
             match operation:
                 case '+':
                     result = add(num1, num2)
-                    print("Результат:", result)
+                    print("Result:", result)
                     makeLog(num1, operation, num2, result)  # Логування дії
                     break
                 case '-':
                     result = subtract(num1, num2)
-                    print("Результат:", result)
+                    print("Result:", result)
                     makeLog(num1, operation, num2, result)  # Логування дії
                     break
                 case '*':
                     result = multiply(num1, num2)
-                    print("Результат:", result)
+                    print("Result:", result)
                     makeLog(num1, operation, num2, result)  # Логування дії
                     break
                 case '/':
                     result = divide(num1, num2)
                     if result is not None:  # Якщо ділення на нуль не відбулося
-                        print("Результат:", result)
+                        print("Result:", result)
                         makeLog(num1, operation, num2, result)  # Логування дії
                         break
                     else:
+                        makeLog(num1, operation, num2, "Error: division by zero!")  # Логування помилки
                         continue  # Запитуємо операцію знову
+
 calculator()

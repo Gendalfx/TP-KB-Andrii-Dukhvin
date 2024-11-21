@@ -1,1 +1,15 @@
 First_num=2.0 operation='+' Second_num=2.0 result=4.0
+First_num=2.0 operation='*' Second_num=0.0 result=0.0
+First_num=2.0 operation='/' Second_num=0.0 result='Помилка: ділення на нуль!'
+First_num=2.0 operation='*' Second_num=0.0 result=0.0
+First_num=2.0 operation='/' Second_num=0.0 result='Error: division by zero!'
+First_num=2.0 operation='+' Second_num=0.0 result=2.0
+2024-11-21 16:28:32 - First_num=2.0 operation='-' Second_num=2.0 result=0.0
+2024-11-21 16:28:39 - First_num=2.0 operation='/' Second_num=0.0 result='Error: division by zero!'
+2024-11-21 16:28:42 - First_num=2.0 operation='*' Second_num=0.0 result=0.0
+2024-11-21 16:28:52 - First_num=2.0 operation='*' Second_num=2.0 result=4.0
+2024-11-21 16:36:40 - Unknown operation: 2. Please try again.
+2024-11-21 16:39:28 - First_num=2.0 operation='2' Second_num=2.0 result=Unknown operation: 2. Please try again.
+2024-11-21 16:39:32 - First_num=2.0 operation='+' Second_num=2.0 result=4.0
+2024-11-21 16:40:14 - First_num=2.0 operation='/' Second_num=2.0 result=1.0
+2024-11-21 16:40:17 - First_num=2.0 operation='/' Second_num=0.0 result=Error: division by zero!

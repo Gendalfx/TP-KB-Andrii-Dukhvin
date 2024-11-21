@@ -29,4 +29,4 @@ def get_operation():
         if operation in ('+', '-', '*', '/'):
             return operation
         else:
-            print("Невідома операція. Спробуйте ще раз.")
+            return operation  # Повертаємо невідому операцію для подальшої обробки
