@@ -1,0 +1,8 @@
+2024-11-28 20:21:10 - First_num=2.0 operation='/' Second_num=0.0 result=Error: division by zero!
+2024-11-28 20:21:14 - First_num=2.0 operation='+' Second_num=0.0 result=2.0
+2024-11-28 20:50:14 - First_num=2.0 operation='+' Second_num=2.0 result=4.0
+2024-11-28 20:50:53 - First_num=2.0 operation='/' Second_num=0.0 result=Error: division by zero!
+2024-11-28 20:50:57 - First_num=2.0 operation='+' Second_num=0.0 result=2.0
+2024-11-28 20:51:04 - First_num=2.0 operation='/' Second_num=0.0 result=Error: division by zero!
+2024-11-28 20:51:21 - First_num=2.0 operation='+' Second_num=0.0 result=2.0
+2024-11-28 20:51:33 - First_num=22.0 operation='*' Second_num=125.0 result=2750.0
