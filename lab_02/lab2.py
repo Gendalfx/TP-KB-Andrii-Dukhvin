@@ -3,14 +3,13 @@ import sys
 
 # Завантаження даних з CSV файлу
 def load_data_from_csv(file_name):
-    students = []
     try:
         with open(file_name, mode='r') as file:
             reader = csv.DictReader(file)
-            for row in reader:
-                students.append(row)
+            students = list(reader)  # Перетворюємо результат на список
     except FileNotFoundError:
         print(f"File {file_name} not found. Starting with an empty list.")
+        students = []
     return students
 
 # Збереження даних у CSV файл
@@ -42,6 +41,7 @@ def addNewElement(students):
     address = input("Please enter student address: ")
     newItem = {"name": name, "phone": phone, "email": email, "address": address}
 
+    # Вставка елемента у відсортований список
     insertPosition = 0
     for item in students:
         if name > item["name"]:
